@@ -28,26 +28,7 @@ public class DFA {
         states = tempArray.length;
         TT = tempArray;
         initialState = is;
-        numberofFS = fs.size();
-        finalState = new int[numberofFS];
-        for (int i = 0; i < numberofFS; i++) {
-            finalState[i] = fs.get(i);
-        }
-        variables = var;
-        noVariables = var.length;
-    }
-    DFA(){
-        System.out.println("Enter Number of states: ");
-        states = in.nextInt();
-        System.out.println("Enter Number of characters: ");
-        noVariables = in.nextInt();
-        variables = new char[noVariables];
-        System.out.println("Enter the characters: ");
-        for (int i = 0; i < noVariables; i++) {
-            variables[i] = in.next().charAt(0);
-        }
-        System.out.println("Enter initial State: ");
-        initialState = in.nextInt();
+       
         System.out.println("Enter the number of final States: ");
         numberofFS = in.nextInt();
         finalState = new int[numberofFS];
